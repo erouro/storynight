@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Story</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="hamb" id="menuBtn">☰</button>
+    <div class="logo-wrap"><img src="assets/img/logo.png" alt="logo" class="logo"></div>
+    <div class="top-actions">
+      <a href="donate.html" class="pill donate">Donate</a>
+      <a href="subscribe.html" id="subscribeBtn" class="pill subscribe">Subscribe</a>
+      <a href="subscribe.html" id="premiumBtn" class="pill premium">Premium</a>
+    </div>
+  </header>
+
+  <aside id="drawer" class="drawer"><button id="closeDrawer">✕</button><nav><!-- same links --></nav></aside>
+
+  <main class="container">
+    <div id="progressBar" class="progress-bar" style="width:0%"></div>
+    <div id="storyArea" class="reader">
+      <a href="index.html" class="back">← Back</a>
+      <h1 id="storyTitle">Loading…</h1>
+      <div id="meta"></div>
+      <img id="storyThumb" class="reader-thumb" src="" alt="" style="display:none;">
+      <article id="storyContent" class="reader-content"></article>
+      <div class="card ad-bottom">AD</div>
+
+      <div style="margin-top:12px; display:flex; gap:8px;">
+        <button id="bookmarkBtn" class="btn">Bookmark</button>
+        <button id="pdfBtn" class="btn">Download PDF</button>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

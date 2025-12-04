@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Donate</title>
+<link rel="stylesheet" href="assets/css/style.css"></head><body>
+<header class="topbar"> <button class="hamb" id="menuBtn">☰</button><div class="logo-wrap"><img src="assets/img/logo.png" class="logo"></div><div class="top-actions"><a href="donate.html" class="pill donate">Donate</a><a href="subscribe.html" class="pill subscribe">Subscribe</a><a href="subscribe.html" class="pill premium">Premium</a></div></header>
+<aside id="drawer" class="drawer"><button id="closeDrawer">✕</button><nav></nav></aside>
+
+<main class="container">
+  <h2>Donate</h2>
+  <div class="card">
+    <div style="display:flex;gap:12px;align-items:center">
+      <div style="width:150px;height:150px;background:#f3f3f3;display:flex;align-items:center;justify-content:center" id="qrBox">QR</div>
+      <div>
+        <p>UPI ID: <b id="upiId">your-upi@bank</b></p>
+        <p>Select amount</p>
+        <div id="donateButtons" style="display:flex;gap:8px">
+          <button class="btn donate-amt" data-amt="10">₹10</button>
+          <button class="btn donate-amt" data-amt="20">₹20</button>
+          <button class="btn donate-amt" data-amt="50">₹50</button>
+          <button class="btn donate-amt" data-amt="100">₹100</button>
+          <button class="btn donate-amt" data-amt="200">₹200</button>
+        </div>
+        <div style="margin-top:8px"><input id="donName" placeholder="Name (optional)"/><input id="donTxn" placeholder="Txn ref (optional)"/></div>
+        <button id="donateSubmit" class="btn-primary">I have donated</button>
+      </div>
+    </div>
+    <div id="donateMsg"></div>
+  </div>
+</main>
+<script type="module" src="assets/js/main.js"></script>
+</body></html>

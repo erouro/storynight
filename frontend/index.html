@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StoryHub — Home</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header class="topbar">
+      <button class="hamb" id="menuBtn">☰</button>
+      <div class="logo-wrap"><img src="assets/img/logo.png" alt="logo" class="logo"></div>
+      <div class="top-actions">
+        <a href="donate.html" class="pill donate">Donate</a>
+        <a href="subscribe.html" id="subscribeBtn" class="pill subscribe">Subscribe</a>
+        <a href="subscribe.html" id="premiumBtn" class="pill premium">Premium</a>
+      </div>
+    </header>
+
+    <!-- Drawer -->
+    <aside id="drawer" class="drawer">
+      <button id="closeDrawer">✕</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html">New Stories</a>
+        <a href="archive.html">Kahani Sangrah</a>
+        <a href="writers.html">Lekhaks</a>
+        <a href="category.html">Categories</a>
+        <a href="submit-story.html">Submit Story</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="admin.html">Admin</a>
+        <a id="drawerPremium" href="subscribe.html">Premium</a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="container">
+      <section class="category-bar" id="categoryBar"></section>
+
+      <section class="layout">
+        <div class="left-col" id="storyList">
+          <h2>New Stories</h2>
+          <div id="list"></div>
+          <div id="pagination"></div>
+        </div>
+
+        <aside class="right-col">
+          <div class="card ad">AD / Placeholder</div>
+          <div class="card" id="popular">Popular</div>
+        </aside>
+      </section>
+    </main>
+
+    <button id="scrollUp" class="scroll-up-btn">↑</button>
+    <footer class="footer">© StoryHub</footer>
+  </div>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

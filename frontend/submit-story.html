@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Submit Story</title>
+<link rel="stylesheet" href="assets/css/style.css"></head><body>
+<header class="topbar"> <button class="hamb" id="menuBtn">☰</button><div class="logo-wrap"><img src="assets/img/logo.png" class="logo"></div><div class="top-actions"><a href="donate.html" class="pill donate">Donate</a><a href="subscribe.html" class="pill subscribe">Subscribe</a><a href="subscribe.html" class="pill premium">Premium</a></div></header>
+<aside id="drawer" class="drawer"><button id="closeDrawer">✕</button><nav></nav></aside>
+
+<main class="container">
+  <h2>Submit Story</h2>
+  <div class="card">
+    <form id="submitStoryForm" enctype="multipart/form-data">
+      <input id="stitle" name="title" placeholder="Story Title" required />
+      <textarea id="scontent" name="content" placeholder="Write your story here or upload a file (txt/pdf/docx)"></textarea>
+      <input type="file" id="sfile" name="file" accept=".txt,.pdf,.docx" />
+      <input id="semail" name="email" type="email" placeholder="Your email (required)" required />
+      <select id="scategory" name="selected_category">
+        <option value="">— Select Category —</option>
+      </select>
+      <input id="sauthor" name="author_name" placeholder="Author / Lekhak (optional)" />
+      <button id="submitStoryBtn" class="btn-primary" type="submit">Submit Story</button>
+    </form>
+    <div id="submitResult"></div>
+    <div class="guidelines">
+      <h4>Guidelines</h4>
+      <ul>
+        <li>No explicit content (we won’t publish explicit stories)</li>
+        <li>Max file size 2MB</li>
+        <li>Allowed: .txt, .pdf, .docx</li>
+        <li>Either type or upload a file (one required)</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script type="module" src="assets/js/submit.js"></script>
+</body></html>

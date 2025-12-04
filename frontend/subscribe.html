@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Subscribe</title>
+<link rel="stylesheet" href="assets/css/style.css"></head><body>
+<header class="topbar"> <button class="hamb" id="menuBtn">☰</button><div class="logo-wrap"><img src="assets/img/logo.png" class="logo"></div><div class="top-actions"><a href="donate.html" class="pill donate">Donate</a><a href="subscribe.html" class="pill subscribe">Subscribe</a><a href="subscribe.html" class="pill premium">Premium</a></div></header>
+<aside id="drawer" class="drawer"><button id="closeDrawer">✕</button><nav></nav></aside>
+
+<main class="container">
+  <h2>Subscribe / Premium</h2>
+  <div class="card">
+    <p>Subscription plans (no custom plans)</p>
+    <ul>
+      <li>1 month — ₹199</li>
+      <li>3 months — ₹299</li>
+      <li>6 months — ₹499</li>
+      <li>12 months — ₹699</li>
+    </ul>
+    <form id="subscribeForm">
+      <h3>Create Account</h3>
+      <input required name="name" placeholder="Name" id="name"/>
+      <input required name="email" placeholder="Email" id="email" type="email"/>
+      <input required name="password" placeholder="Password" id="password" type="password"/>
+      <h3>Choose Plan</h3>
+      <select id="plan" required>
+        <option value="1M">1 month — ₹199</option>
+        <option value="3M">3 months — ₹299</option>
+        <option value="6M">6 months — ₹499</option>
+        <option value="1Y">12 months — ₹699</option>
+      </select>
+      <h3>After payment (UPI) enter transaction reference</h3>
+      <input name="txn" id="txn" placeholder="Txn ref" required/>
+      <button id="subscribeNow" type="submit" class="btn-primary">Submit</button>
+    </form>
+    <div id="subscribeResult"></div>
+  </div>
+</main>
+<script type="module" src="assets/js/main.js"></script>
+</body></html>
